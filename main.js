@@ -18,7 +18,7 @@ window.addEventListener("load", ()=>{
         })
 
     const addNewUserFunc = ()=>{
-        let newUser = {
+        let newUsuario = {
             id : 23,
             name : userName.value,
             phone : userPhone.value  
@@ -28,10 +28,10 @@ window.addEventListener("load", ()=>{
             headers : {
                 'Content-Type' : 'application/json'
             },
-            body : JSON.stringify(newUser)
+            body : JSON.stringify(newUsuario)
         }).then(res => res.json())
         .then(data =>{
-            userList.push(newUser)
+            userList.push(newUsuario)
         })
     }
     addNewUser.addEventListener("click", (e)=>{
