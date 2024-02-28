@@ -11,9 +11,9 @@ window.addEventListener("load", ()=>{
     let userList=[]
     fetch(`https://65d5afe7f6967ba8e3bc37fa.mockapi.io/users`)
         .then(res=> res.json())
-        .then(data=> {
-            console.log(data) 
-            userList = data;
+        .then(datos=> {
+            console.log(datos) 
+            userList = datos;
           
         })
 
